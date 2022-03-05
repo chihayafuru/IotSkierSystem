@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>メッセージ送信ページ</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <script src="https://r.chirimen.org/relayserver.js"></script>
+    <script src="./control.js"></script>
+  </head>
+  <h1>スキーヤー向け緊急通報ページ</h1>
+  <body>
+    <table>
+      <tbody>
+        <tr>
+          <td>源頼朝</td>
+          <td><input type="button" id="addMarker00" value="通常" onclick="sendMessage(0, 'N')"></td>
+          <td><input type="button" id="addMarker01" value="警告" onclick="sendMessage(0, 'W')"></td>
+          <td><input type="button" id="addMarker02" value="緊急" onclick="sendMessage(0, 'E')"></td>
+          <td><input type="button" id="delMarker03" value="削除" onclick="sendMessage(0, 'U')"></td>
+        </tr>
+        <tr>
+          <td>三浦義村</td>
+          <td><input type="button" id="addMarker10" value="通常" onclick="sendMessage(1, 'N')"></td>
+          <td><input type="button" id="addMarker11" value="警告" onclick="sendMessage(1, 'W')"></td>
+          <td><input type="button" id="addMarker12" value="緊急" onclick="sendMessage(1, 'E')"></td>
+          <td><input type="button" id="delMarker13" value="削除" onclick="sendMessage(1, 'U')"></td>
+        </tr>
+        <tr>
+          <td>北条義時</td>
+          <td><input type="button" id="addMarker20" value="通常" onclick="sendMessage(2, 'N')"></td>
+          <td><input type="button" id="addMarker21" value="警告" onclick="sendMessage(2, 'W')"></td>
+          <td><input type="button" id="addMarker22" value="緊急" onclick="sendMessage(2, 'E')"></td>
+          <td><input type="button" id="delMarker23" value="削除" onclick="sendMessage(2, 'U')"></td>
+        </tr>
+        <tr>
+          <td>木曾義仲</td>
+          <td><input type="button" id="addMarker30" value="通常" onclick="sendMessage(3, 'N')"></td>
+          <td><input type="button" id="addMarker31" value="警告" onclick="sendMessage(3, 'W')"></td>
+          <td><input type="button" id="addMarker32" value="緊急" onclick="sendMessage(3, 'E')"></td>
+          <td><input type="button" id="delMarker33" value="削除" onclick="sendMessage(3, 'U')"></td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <div id="messageDiv">achex web socketリレーサービスに接続中です。しばらくお待ちください。</div>
+  </body>
+</html>
